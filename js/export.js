@@ -85,7 +85,7 @@ export const modal_Gallery = (data) => {
     return`   
     <div class="modal-gallery">
         <div class="btn_close_gral">
-            <p style="color: white;">${data.tipo.descripcion} > ${data.nombre}</p>
+            <p style="color: white;margin:0;">${data.tipo.descripcion} > ${data.nombre}</p>
             <span class="material-symbols-outlined close-gallery">close</span>	
         </div>
         <div class="container-body-gallery">

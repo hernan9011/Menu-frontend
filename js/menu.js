@@ -99,7 +99,6 @@ function createOrderLetter(Merchandise, amount) {
 
     precioTotal = precioTotal + amount * Merchandise.precio;
     const div = document.querySelector('.div-mensajes');
-    // div.innerHTML = "";
     div.innerHTML = `<p>Precio Total:</p><p>${precioTotal}</p>`;
 
     const button = letter.querySelector(`#button-eliminate-${Merchandise.id}`);
@@ -194,6 +193,8 @@ async function newCommand() {
 }
 
 function ticket(ticket) {
+    const div = document.querySelector('.div-mensajes');
+    div.innerHTML = `<p>Precio Total:</p><p>0</p>`;
     const listCommand = document.getElementById('command-body');
     const item = document.createElement('div');
     item.id = 'myModal';
